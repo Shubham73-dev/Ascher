@@ -1,9 +1,10 @@
 *{
     font-family: 'Cinzel', serif;
-}
-body{
     margin: 0;
     padding: 0;
+}
+body{
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -27,6 +28,9 @@ a{
 }
 .flex-2{
     flex: 2;
+}
+.align-text-end{
+    text-align: end;
 }
 /* css for header starts here */
 nav{
@@ -91,3 +95,81 @@ nav{
     align-items: center;
 }
 /* css for header ends here */
+
+/* css for third (collection section starts from here) */
+#collection{
+    padding: 5rem 1rem;
+}
+#collection h2{
+    font-size: 15pt;
+    color: #434242;
+    font-weight: 100;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.collection_box a:hover img{
+    transform: scale(1.1);
+}
+.collection_box a:hover .collection-content{
+    background-color: transparent;
+}
+.collection_box a:hover p{
+    color: #fff;
+}
+.collection_box a:hover h4{
+    color: #fff;
+}
+.collection_box a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.collection_box a img{
+    transition-duration: 0.5s;
+}
+.collection-content{
+    position: absolute;
+    bottom: 0;
+    background-color: #F5F5F9;
+    width: 100%;
+    padding: 15px 0;
+    transition-duration: 0.5s;
+}
+.collection-content p{
+    color: #5B5B5B;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.collection-content h4{
+    font-size: 16pt;
+    color: #5B5B5B;
+    font-weight: 400;
+    padding: 0 10px;
+}
+.upper-section{
+    column-gap: 1.5rem;
+}
+.second-collection-container{
+    justify-content: space-between;
+    height: 100%;
+    gap: 1rem;
+}
+
+/* css for RWD */
+@media(max-width:992px){  
+    body{
+        overflow-x: hidden !important;
+    }               
+    .collection-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .upper-section{
+        flex-direction: column !important;
+    }
+}
