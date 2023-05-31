@@ -182,6 +182,7 @@ nav{
         display: none !important;
     }
     .mobile-nav{
-        display: block;
+        display: flex;
+        background-color: #fff !important;
     }
 }
