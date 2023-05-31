@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 a{
     text-decoration: none;
@@ -36,6 +37,9 @@ a{
 nav{
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
+}
+.mobile-nav{
+    display: none;
 }
 .nav-container{
     justify-content: space-evenly;
@@ -121,9 +125,11 @@ nav{
 }
 .collection_box a:hover p{
     color: #fff;
+    transition-duration: 0.5s;
 }
 .collection_box a:hover h4{
     color: #fff;
+    transition-duration: 0.5s;
 }
 .collection_box a{
     position: relative;
@@ -171,5 +177,11 @@ nav{
     }
     .upper-section{
         flex-direction: column !important;
+    }
+    .desktop-nav{
+        display: none !important;
+    }
+    .mobile-nav{
+        display: block;
     }
 }
