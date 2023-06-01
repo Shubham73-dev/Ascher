@@ -69,6 +69,12 @@ nav{
     outline: none;
     box-shadow: none;
     border-color: transparent;
+}
+.form-control-no-border:focus,
+  .form-control-no-border:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
   }
 .mobile-nav{
     display: none !important;
@@ -112,11 +118,11 @@ nav{
     align-items: center;
     padding: 5px;
 }
-.search-box input[type="text"]{
+.search-box input[type="search"]{
     border: none;
     outline: none;
 }
-.search-box input[type="text"]::placeholder{
+.search-box input[type="search"]::placeholder{
     font-size: 12px;
     letter-spacing: 2px;
 }
