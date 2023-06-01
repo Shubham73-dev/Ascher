@@ -301,20 +301,44 @@ nav{
     margin: 0;
 }
 /* bootstrap customize css */
-.carousel-item {
+.customer-slider-container {
+    min-height: 65vh;
     background-image: url('../assets/images/accolades.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    height: 65vh;
-  }
-  
-  .carousel-content {
-    background-color: transparent; /* Optional: Add a semi-transparent background color to make the text more readable */
-    padding: 20px;
-    color: white
-  }
-  
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+.customer-slider-container h2{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.custom-nav{
+    display: flex;
+}
+.card{
+    background-color: transparent !important;
+    color: #fff;
+}
+.card-body{
+    background-color: transparent !important;
+    color: white;
+    border: 1px solid white;
+}
+.card-text{
+    font-size: 10pt;
+    line-height: 17px;
+} 
+.card h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 15px;
+}
 /* css for RWD */
 @media(max-width:992px){  
     body{

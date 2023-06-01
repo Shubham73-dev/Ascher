@@ -26,6 +26,15 @@
   <link rel="stylesheet" href="./stylesheets/main.css">
   <!-- script source -->
   <script src="./scripts/main.js" defer></script>
+  <!-- Add the Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Add the Bootstrap CSS (required by Owl Carousel) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Add the Owl Carousel JavaScript dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -269,41 +278,88 @@
   <!-- section fourth ends here -->
   
   <!-- section fifth starts here -->
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <div class="d-block w-100 carousel-content">
-          <h1>First Slide</h1>
-          <p>This is the content of the first slide.</p>
+  <section id="CUSTOMER_ACCOLADEs">
+    <div class="customer-slider-container">
+      <h2>CUSTOMER ACCOLADES</h2>
+      <div class="carousel-container">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Superb experience with Ascher Jewels, Priyesh has deep insights on the subject, he understands the customer's needs and requirements and has all the patience to guide and helps us to take a decision. Best Price with Best Craftsmanship, what more can anyone ask for? Best Wishes to Ascher Jewels. A Very Happy, Satisfied and a Repeat Customer. 1.</p>
+              </div>
+              <h4>Customer 1</h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Superb experience with Ascher Jewels, Priyesh has deep insights on the subject, he understands the customer's needs and requirements and has all the patience to guide and helps us to take a decision. Best Price with Best Craftsmanship, what more can anyone ask for? Best Wishes to Ascher Jewels. A Very Happy, Satisfied and a Repeat Customer. 2.</p>
+              </div>
+              <h4>Customer 2</h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Superb experience with Ascher Jewels, Priyesh has deep insights on the subject, he understands the customer's needs and requirements and has all the patience to guide and helps us to take a decision. Best Price with Best Craftsmanship, what more can anyone ask for? Best Wishes to Ascher Jewels. A Very Happy, Satisfied and a Repeat Customer. 3.</p>
+              </div>
+              <h4>Customer 3</h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Superb experience with Ascher Jewels, Priyesh has deep insights on the subject, he understands the customer's needs and requirements and has all the patience to guide and helps us to take a decision. Best Price with Best Craftsmanship, what more can anyone ask for? Best Wishes to Ascher Jewels. A Very Happy, Satisfied and a Repeat Customer. 4.</p>
+              </div>
+              <h4>Customer 4</h4>
+            </div>
+          </div>
+          <!-- Add more card items as needed -->
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <div class="d-block w-100 carousel-content">
-          <h1>Second Slide</h1>
-          <p>This is the content of the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-block w-100 carousel-content">
-          <h1>Third Slide</h1>
-          <p>This is the content of the third slide.</p>
+        <!-- Add custom sliding buttons -->
+        <div class="custom-nav">
+          <button class="custom-prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+          <button class="custom-next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
+
   <!-- section fifth ends here -->
   
   <footer id="footer">
     <p>© ASCHER JEWELS PRIVATE LIMITED • ALL RIGHTS RESERVED</p>
   </footer>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        items: 4, // Number of cards to be visible at a time
+        loop: true, // Enable loop
+        margin: 10, // Margin between cards
+        nav: false, // Disable default navigation buttons
+        responsive: {
+          0: {
+            items: 1 // Number of cards to be visible on small screens (optional)
+          },
+          576: {
+            items: 2 // Number of cards to be visible on medium screens (optional)
+          },
+          992: {
+            items: 4 // Number of cards to be visible on large screens (optional)
+          }
+        }
+      });
+  
+      // Custom navigation buttons
+      $('.custom-next').click(function() {
+        $('.owl-carousel').trigger('next.owl.carousel');
+      });
+      $('.custom-prev').click(function() {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+      });
+    });
+  </script>
 </body>
 
 </html>
