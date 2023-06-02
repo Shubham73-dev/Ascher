@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="./stylesheets/main.css">
   <!-- script source -->
   <script src="./scripts/main.js" defer></script>
+  <!-- font-family-sheet -->
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
   <!-- Add the Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
@@ -34,7 +36,7 @@
 
   <!-- Add the Owl Carousel JavaScript dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>  
 </head>
 
 <body>
@@ -42,12 +44,20 @@
   <header id="header">
     <nav class="desktop-nav">
       <div class="custom-row nav-container">
-        <div class="menu home"><a href="#"><img width="15px"
-              src="https://ascher.in/wp-content/themes/ascher/assets/images/icons/home.svg" alt="home"></a></div>
+        <div class="menu home"></div>
         <div class="menu flex-1">
-          <div class="custom-row flex-col space-ele">
-            <div class=""><a href="https://ascher.in/whats-new/" target="_blank">WHAT'S NEW</a></div>
-            <div class=""><a href="#collection">COLLECTIONS</a></div>
+          <div class="custom-row flex-col space-ele" style="justify-content: end;">
+            <div class=""></div>
+            <div class="drop-down">
+              <a href="#collection">COLLECTIONS <br> <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="drop-down-menu pos-abs">
+                <li style="list-style: none;"><a href="https://ascher.in/collections/engagement-rings/" target="_blank">ENGAGEMENT RINGS</a></li>
+                <li><a href="https://ascher.in/collections/celebration-wear/" target="_blank">CELEBRATION WEAR</a></li>
+                <li><a href="https://ascher.in/collections/solitaire-pendants-earrings/" target="_blank">Solitaire Pendants & Earrings</a></li>
+                <li><a href="https://ascher.in/collections/solitaires-for-customised-jewellery/" target="_blank">Solitaires for Customised Jewellery</a></li>
+                <li><a href="https://ascher.in/collections/daily-essentials/" target="_blank">DAILY ESSENTIALS</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="menu flex-1">
@@ -66,7 +76,15 @@
           </div>
           <div class="menu-bottom-align custom-row">
             <a href="https://ascher.in/#jewelcare" target="_blank" style="white-space: nowrap;">JEWEL CARE</a>
-            <a href="#CUSTOMER_ACCOLADEs" style="text-align: end;">CUSTOMER ACCOLADES</a>
+            <a href="#CUSTOMER_ACCOLADEs" class="drop-down">
+              ABOUT US <br> <i class="fa-solid fa-caret-down"></i>
+              <ul class="drop-down-menu pos-abs">
+                <li>FAQ</li>
+                <li>CUSTOMER ACCOLADES</li>
+                <li>CAREER</li>
+                <li>WHAT'S NEW</li>
+              </ul>
+            </a>            
           </div>
         </div>
         <div class="menu flex-1">
@@ -233,10 +251,10 @@
         </div>
         <div class="stage-content flex-1 flex-col custom-row justify-center">
           <div style="padding: 0 15px;">
-            <h2>STAGE-1</h2>
+            <h2>STAGE-2</h2>
             <div class="row flex-col">
-              <span>Select a design</span>
-              <span>or create a new one with us</span>
+              <span>Review a 2D sketch and a 3D CAD design</span>
+              <span>to visualise the end product</span>
             </div>
           </div>
         </div>
@@ -247,10 +265,10 @@
         </div>
         <div class="stage-content flex-1 flex-col custom-row justify-center">
           <div style="padding: 0 15px;">
-            <h2>STAGE-2</h2>
+            <h2>STAGE-3</h2>
             <div class="row flex-col">
-              <span>Select a design</span>
-              <span>or create a new one with us</span>
+              <span>Review a wax prototype to see</span>
+              <span>how your jewellery piece will look</span>
             </div>
           </div>
         </div>
@@ -261,10 +279,10 @@
         </div>
         <div class="stage-content flex-1 flex-col custom-row justify-center">
           <div style="padding: 0 15px;">
-            <h2>STAGE-3</h2>
+            <h2>STAGE-4</h2>
             <div class="row flex-col">
-              <span>Select a design</span>
-              <span>or create a new one with us</span>
+              <span>Check the raw unpolished</span>
+              <span>Gold/Platinum mount</span>
             </div>
           </div>
         </div>
@@ -275,10 +293,10 @@
         </div>
         <div class="stage-content flex-1 flex-col custom-row justify-center">
           <div style="padding: 0 15px;">
-            <h2>STAGE-4</h2>
+            <h2>STAGE-5</h2>
             <div class="row flex-col">
-              <span>Select a design</span>
-              <span>or create a new one with us</span>
+              <span>Set gemstones and</span>
+              <span>have the final jewel ready</span>
             </div>
           </div>
         </div>
@@ -340,10 +358,10 @@
           <!-- Add more card items as needed -->
         </div>
         <!-- Add custom sliding buttons -->
-        <div class="custom-nav">
-          <button class="slide-control custom-prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <button class="slide-control custom-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
+      </div>
+      <div class="custom-nav">
+        <button class="slide-control custom-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slide-control custom-next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
@@ -353,35 +371,6 @@
   <footer id="footer">
     <p>© ASCHER JEWELS PRIVATE LIMITED • ALL RIGHTS RESERVED</p>
   </footer>
-  <script>
-    $(document).ready(function () {
-      $('.owl-carousel').owlCarousel({
-        items: 4, // Number of cards to be visible at a time
-        loop: true, // Enable loop
-        margin: 10, // Margin between cards
-        nav: false, // Disable default navigation buttons
-        responsive: {
-          0: {
-            items: 1 // Number of cards to be visible on small screens (optional)
-          },
-          576: {
-            items: 2 // Number of cards to be visible on medium screens (optional)
-          },
-          992: {
-            items: 4 // Number of cards to be visible on large screens (optional)
-          }
-        }
-      });
 
-      // Custom navigation buttons
-      $('.custom-next').click(function () {
-        $('.owl-carousel').trigger('next.owl.carousel');
-      });
-      $('.custom-prev').click(function () {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-      });
-    });
-  </script>
 </body>
-
 </html>

@@ -101,6 +101,26 @@ nav{
     left: 20%;
     top: 5%;
 }
+.drop-down-menu{
+    display: none;
+}
+.drop-down-menu li{
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+    color: #000;
+}
+.drop-down:hover .drop-down-menu{
+    display: flex;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    background-color: white;
+    padding: 14px;
+    box-shadow: 10px 8px 10px 5px rgba(0, 0, 0, 0.5);
+}
 .space-ele{
     height: 100%;
     justify-content: space-around;
@@ -108,8 +128,7 @@ nav{
     row-gap: 1rem;
 }
 .search-container{
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     row-gap: 1rem;
 }
 .search-box{
@@ -256,10 +275,11 @@ nav{
 }
 #customized_jwellery p{
     text-align: justify;
-    font-size: 12pt;
+    font-size: 13pt;
     line-height: 22px;
     color: #434242;
     font-weight: 100;
+    font-family: 'myriad_prolight';
 }
 .divider-hort{
     height: 1px;
@@ -288,7 +308,45 @@ nav{
     color: #fff;
     font-size: 3rem;
 }
+.carousel-container {
+    width: 75%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
 
+  .owl-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display four columns */
+    grid-gap: 10px; /* Add some spacing between cards */
+  }
+  .customer-slider-container{
+    position: relative;
+  }
+  .owl-carousel .item {
+    width: 100%; /* Set the width of each card */
+  }
+
+.custom-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+}
+
+.custom-nav .slide-control {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
+.owl-nav button{
+  background-color: red;
+}
 /* footer css */
 #footer{
     padding: 2rem 5rem;
@@ -311,11 +369,14 @@ nav{
     font-weight: 100;
     line-height: 20px;
     color: #fff;
+    width: 75%;
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
 .custom-nav{
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 .card{
     background-color: transparent !important;
