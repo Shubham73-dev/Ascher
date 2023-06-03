@@ -295,9 +295,15 @@ nav{
     max-width: 75%;
     margin: 0 auto;
 }
+.stage-content{
+    gap: 1rem;
+}
 .custom-card{
     max-height: 65vh;
     column-gap: 2px;
+}
+.quote-btn-container{
+    padding:0 1rem;
 }
 /* css for fifth(second carousel) section starts here */
 .slide-control{
@@ -316,13 +322,14 @@ nav{
   .owl-carousel {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Display four columns */
-    grid-gap: 10px; /* Add some spacing between cards */
+    grid-gap: 30px; /* Add some spacing between cards */
   }
   .customer-slider-container{
     position: relative;
   }
   .owl-carousel .item {
-    width: 100%; /* Set the width of each card */
+    width: 90%; /* Set the width of each card */
+    margin: 0 auto;
   }
 
 .custom-nav {
@@ -341,12 +348,7 @@ nav{
   padding: 10px;
   cursor: pointer;
 }
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-  display: block !important;
-}
-.owl-nav button{
-  background-color: red;
-}
+
 /* footer css */
 #footer{
     padding: 2rem 5rem;
@@ -390,6 +392,7 @@ nav{
 .card-body .review-lists{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .card-body .review-lists li{
     margin: 0;
@@ -400,6 +403,7 @@ nav{
     margin: 0;
     padding: 0;
     font-size: 10px;
+    word-spacing: 2px;
 }
 .card-body .review-lists p{
     margin: 0;
@@ -434,6 +438,9 @@ nav{
     .mobile-nav{
         display: flex !important;
         background-color: #fff !important;
+    }
+    #first-carousel{
+        margin-top: 7.5rem;
     }
     .slide-content-container{
         right: 6% !important;
