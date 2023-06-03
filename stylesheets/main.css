@@ -437,7 +437,14 @@ nav{
     text-align: center;
     margin-top: 15px;
 }
-
+#recipient-name,#message-text{
+    text-transform: capitalize !important;
+    font-family: auto;
+}
+#recipient-email{
+    text-transform: lowercase !important;
+    font-family: auto;
+}
 /* css for RWD */
 @media(max-width:992px){             /*tablet-view*/
     body{
