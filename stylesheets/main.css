@@ -53,6 +53,9 @@ a:hover{
 .align-text-center{
     text-align: center;
 }
+.align-element-end{
+    align-items: end;
+}
 .reverse-row{
     flex-direction: row-reverse;
 }
@@ -268,6 +271,9 @@ nav{
 }
 
 /* section fourth css starts here */
+#customized_jwellery{
+    padding: 14px 0;
+}
 #customized_jwellery h2{
     font-size: 15pt;
     line-height: 20px;
@@ -295,15 +301,24 @@ nav{
     max-width: 75%;
     margin: 0 auto;
 }
-.stage-content{
-    gap: 1rem;
-}
 .custom-card{
     max-height: 65vh;
-    column-gap: 2px;
 }
-.quote-btn-container{
-    padding:0 1rem;
+.stage-content-elements{
+    gap: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+.stage-content-elements h2{
+    font-size: 22pt !important;
+}
+.stage-content-elements p{
+    font-size: 11pt;
+    font-family: 'myriad_prolight';
+    letter-spacing: 1px;
+}
+.quote-btn{
+    width: max-content !important;
 }
 /* css for fifth(second carousel) section starts here */
 .slide-control{
@@ -359,7 +374,7 @@ nav{
 }
 /* bootstrap customize css */
 .customer-slider-container {
-    min-height: 65vh;
+    /* min-height: 65vh; */
     background-image: url('../assets/images/accolades.jpg');
     background-size: cover;
     background-position: center;
@@ -422,7 +437,7 @@ nav{
     margin-top: 15px;
 }
 /* css for RWD */
-@media(max-width:992px){  
+@media(max-width:992px){             /*tablet-view*/
     body{
         overflow-x: hidden !important;
     }               
@@ -452,9 +467,34 @@ nav{
         padding-right: 6rem;
     }
 }
-@media(max-width:768px){ 
+@media(max-width:768px){            /*mobile-view*/
     .banners{
         max-height: 50vh !important;
         min-height: 50vh !important;
+    }
+    .slide-content-container{
+        position: static;
+        background-color: #EEEEEE;
+        padding: 1rem;
+    }
+    .slide-content p{
+        text-align: center !important;
+        padding: 0;
+    }
+    .togglers-container{
+        justify-content: center;
+    }
+    .stage-content{
+        padding: 25px 0;
+    }
+    .customized_jwellery-conatiner{
+        max-width: 95%;
+    }
+    .stage-content-elements{
+        gap: 10px;
+    }
+    .stage-content-elements p,.stage-content-elements button{
+        font-size: 12px;
+        text-align: left;
     }
 }
