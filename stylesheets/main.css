@@ -303,6 +303,7 @@ nav{
 }
 .custom-card{
     max-height: 65vh;
+    gap: 1px;
 }
 .stage-content-elements{
     gap: 1rem;
@@ -312,7 +313,7 @@ nav{
 .stage-content-elements h2{
     font-size: 22pt !important;
 }
-.stage-content-elements p{
+.stage-content-elements span{
     font-size: 11pt;
     font-family: 'myriad_prolight';
     letter-spacing: 1px;
@@ -493,7 +494,7 @@ nav{
     .stage-content-elements{
         gap: 10px;
     }
-    .stage-content-elements p,.stage-content-elements button{
+    .stage-content-elements span,.stage-content-elements button{
         font-size: 12px;
         text-align: left;
     }
