@@ -1,42 +1,80 @@
 var togglers = document.getElementsByClassName('togglers');
 var bannerEle = document.getElementsByClassName('banners')[0];
-var slidePaths = ['../assets/images/slider-1.jpg','./assets/images/slider-2.jpg','./assets/images/slider-3.jpg','./assets/images/slider-4.jpg'];
+var slidePaths = ['../assets/images/slider-1.jpg', './assets/images/slider-2.jpg', './assets/images/slider-3.jpg', './assets/images/slider-4.jpg'];
 var currentIndex = 0; // Current index of the slide
 
+var touchstartX = 0;
+var touchendX = 0;
+
 function addToggleEvent() {
-    for(var i = 0; i < togglers.length; i++){
-        togglers[i].addEventListener('click', toggleSlide);
-    }
+  for (var i = 0; i < togglers.length; i++) {
+    togglers[i].addEventListener('click', toggleSlide);
+  }
 }
+
 addToggleEvent(); // calling of addToggleEvent
 
 function toggleSlide() {
-    for (var i = 0; i < togglers.length; i++) {
-        togglers[i].style.backgroundColor = '#632c66';
-    }
-    this.style.backgroundColor = 'white';
-  
-    var index = Array.prototype.indexOf.call(togglers, this); // Get the index of the clicked togglers element
-    bannerEle.style.backgroundImage = 'url(' + slidePaths[index] + ')';
-    currentIndex = index; // Update the current index
+  for (var i = 0; i < togglers.length; i++) {
+    togglers[i].style.backgroundColor = '#632c66';
+  }
+  this.style.backgroundColor = 'white';
+
+  var index = Array.prototype.indexOf.call(togglers, this); // Get the index of the clicked togglers element
+  bannerEle.style.backgroundImage = 'url(' + slidePaths[index] + ')';
+  currentIndex = index; // Update the current index
 }
 
-// method to animate first crousel starts from here
 function animateSlide() {
-    currentIndex = (currentIndex + 1) % slidePaths.length; // Increment the current index and wrap around if necessary
-    bannerEle.style.backgroundImage = 'url(' + slidePaths[currentIndex] + ')';
+  currentIndex = (currentIndex + 1) % slidePaths.length; // Increment the current index and wrap around if necessary
+  bannerEle.style.backgroundImage = 'url(' + slidePaths[currentIndex] + ')';
 
-    // Update the active toggler
-    for (var i = 0; i < togglers.length; i++) {
-        togglers[i].style.backgroundColor = '#632c66';
-    }
-    togglers[currentIndex].style.backgroundColor = 'white';
+  // Update the active toggler
+  for (var i = 0; i < togglers.length; i++) {
+    togglers[i].style.backgroundColor = '#632c66';
+  }
+  togglers[currentIndex].style.backgroundColor = 'white';
 }
-// method to animate first crousel ends here
 
+function handleSwipe() {
+  bannerEle.addEventListener('touchstart', touchStart, false);
+  bannerEle.addEventListener('touchend', touchEnd, false);
 
-// Automatically animate the slide every 0.5 seconds fro first-carousel
-setInterval(animateSlide, 6000);
+  function touchStart(event) {
+    touchstartX = event.touches[0].clientX;
+  }
+
+  function touchEnd(event) {
+    touchendX = event.changedTouches[0].clientX;
+    handleGesture();
+  }
+
+  function handleGesture() {
+    if (touchendX < touchstartX) {
+      // Swiped left, move to the next slide
+      currentIndex = (currentIndex + 1) % slidePaths.length;
+      bannerEle.style.backgroundImage = 'url(' + slidePaths[currentIndex] + ')';
+      updateActiveToggler();
+    } else if (touchendX > touchstartX) {
+      // Swiped right, move to the previous slide
+      currentIndex = (currentIndex - 1 + slidePaths.length) % slidePaths.length;
+      bannerEle.style.backgroundImage = 'url(' + slidePaths[currentIndex] + ')';
+      updateActiveToggler();
+    }
+  }
+}
+
+function updateActiveToggler() {
+  for (var i = 0; i < togglers.length; i++) {
+    togglers[i].style.backgroundColor = '#632c66';
+  }
+  togglers[currentIndex].style.backgroundColor = 'white';
+}
+
+setInterval(animateSlide, 5000); // Automatically animate the slide every 5 seconds
+
+handleSwipe(); // Enable touch swipe functionality
+
 
 // script for OWL carousel starts here
 $(document).ready(function () {

@@ -195,6 +195,7 @@ nav{
     font-weight: 400;
     color: #632c66;
     margin: 0;
+    line-height: 36px !important;
 }
 .left-align{
     padding-right: 12rem;
@@ -399,6 +400,7 @@ nav{
     }
     .slide-content p{
         font-size: 1.5em;
+        line-height: 36px !important;
     }
     .left-align{
         padding-right: 6rem;
@@ -413,6 +415,7 @@ nav{
         position: static;
         background-color: #EEEEEE;
         padding: 1rem;
+        gap: 10px !important;
     }
     .slide-content p{
         text-align: center !important;
