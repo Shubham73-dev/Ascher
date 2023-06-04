@@ -107,8 +107,7 @@ nav{
 .social-media-conatiner{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
+    padding: 10px;
 }
 .social-media-conatiner a i{
     color: #5B5B5B;
@@ -394,9 +393,6 @@ nav{
         width: fit-content;
         gap: 1rem;
         padding: 1rem 0;
-    }
-    #first-carousel{
-        margin-top: 7.5rem;
     }
     .slide-content-container{
         right: 6% !important;
