@@ -68,3 +68,5 @@ $(document).ready(function () {
   });
 
 // script for OWL carousel ends here
+
+
