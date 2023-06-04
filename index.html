@@ -44,7 +44,14 @@
   <header id="header">
     <nav class="desktop-nav">
       <div class="custom-row nav-container">
-        <div class="menu home"></div>
+        <div class="menu home">
+          <div class="social-media-conatiner">
+            <div class="icon-container"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="icon-container"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="icon-container"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="icon-container"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+          </div>
+        </div>
         <div class="menu flex-1">
           <div class="custom-row flex-col space-ele" style="justify-content: end;">
             <div class=""></div>
@@ -77,17 +84,17 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="search" placeholder="SEARCH">
           </div>
-          <div class="menu-bottom-align custom-row">
+          <div class="menu-bottom-align custom-row align-center">
             <a href="https://ascher.in/#jewelcare" target="_blank" style="white-space: nowrap;">JEWEL CARE</a>
-            <a href="#CUSTOMER_ACCOLADEs" class="drop-down">
+            <div class="drop-down drop-down-div">
               ABOUT US <br> <i class="fa-solid fa-caret-down"></i>
               <ul class="drop-down-menu pos-abs">
-                <li>FAQ</li>
-                <li>CUSTOMER ACCOLADES</li>
-                <li>CAREER</li>
-                <li>WHAT'S NEW</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#CUSTOMER_ACCOLADEs">CUSTOMER ACCOLADES</a></li>
+                <li><a href="#">CAREER</a></li>
+                <li><a href="https://ascher.in/whats-new/" target="_blank">WHAT'S NEW</a></li>
               </ul>
-            </a>
+            </div>
           </div>
         </div>
         <div class="menu flex-1">
@@ -115,12 +122,29 @@
             <input class="form-control form-control-no-border" type="search" placeholder="Search" aria-label="Search">
           </form>
           <div class="navbar-nav">
-            <a class="nav-link" href="https://ascher.in/whats-new/" target="_blank">WHAT'S NEW</a>
+            <div class="social-media-conatiner">
+              <div class="icon-container"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+              <div class="icon-container"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="icon-container"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+              <div class="icon-container"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            </div>
+            <a class="nav-link" href="#collection" class="nav-link dropdown-toggle" id="collectionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COLLECTIONS &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="collectionDropdown">
+              <li><a class="dropdown-item" href="https://ascher.in/collections/engagement-rings/" target="_blank">ENGAGEMENT RINGS</a></li>
+              <li><a class="dropdown-item" href="https://ascher.in/collections/celebration-wear/" target="_blank">CELEBRATION WEAR</a></li>
+              <li><a class="dropdown-item" href="https://ascher.in/collections/solitaire-pendants-earrings/" target="_blank">Solitaire Pendants & Earrings</a></li>
+              <li><a class="dropdown-item" href="https://ascher.in/collections/solitaires-for-customised-jewellery/" target="_blank">Solitaires for Customised Jewellery</a></li>
+              <li><a class="dropdown-item" href="https://ascher.in/collections/daily-essentials/" target="_blank">DAILY ESSENTIALS</a></li>
+            </ul>
             <a class="nav-link" href="#customized_jwellery">CUSTOMIZED JWELLERY</a>
-            <a class="nav-link" href="#collection">COLLECTIONS +</a>
             <a class="nav-link" href="https://ascher.in/#jewelcare" target="_blank">JEWEL CARE</a>
-            <a class="nav-link" href="#CUSTOMER_ACCOLADEs">CUSTOMER ACCOLADES</a>
-            <a class="nav-link" href="https://ascher.in/about-us/" target="_blank">ABOUT US</a>
+            <a class="nav-link" href="https://ascher.in/about-us/" target="_blank" class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#CUSTOMER_ACCOLADEs">Customer Accolades</a></li>
+              <li><a class="dropdown-item" href="#">Career</a></li>
+              <li><a class="dropdown-item" href="https://ascher.in/whats-new/" target="_blank">What's New</a></li>
+            </ul>
             <a class="nav-link" href="https://ascher.in/contact-enquiry-2/" target="_blank">CONTACT / ENQUIRY</a>
           </div>
         </div>
@@ -156,7 +180,7 @@
     <h2>COLLECTIONS</h2>
     <div class="collection-container">
       <div class="collection_box first-collection">
-        <a href="#">
+        <a href="https://ascher.in/collections/engagement-rings/" target="_blank">
           <div class="collection-img">
             <img class="width-100" src="./assets/images/collection-img-1.jpg" alt="ccollection">
           </div>
@@ -169,7 +193,7 @@
       <div class="collection_box second-collection">
         <div class="custom-row flex-col second-collection-container">
           <div class="custom-row upper-section">
-            <a href="#">
+            <a href="https://ascher.in/collections/celebration-wear/" target="_blank">
               <div class="left-col">
                 <div class="collection-img">
                   <img class="width-100" src="./assets/images/collection-img-2.jpg" alt="collection">
@@ -180,7 +204,7 @@
                 </div>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ascher.in/collections/solitaire-pendants-earrings/" target="_blank">
               <div class="right-col">
                 <div class="collection-img">
                   <img class="width-100" src="./assets/images/collection-img-3.jpg" alt="collection">
@@ -193,7 +217,7 @@
             </a>
           </div>
           <div class="lower-section">
-            <a href="#">
+            <a href="https://ascher.in/collections/solitaires-for-customised-jewellery/" target="_blank">
               <div class="collection-img">
                 <img class="width-100" src="./assets/images/collection-img-4.jpg" alt="collection">
               </div>
@@ -206,7 +230,7 @@
         </div>
       </div>
       <div class="collection_box third-collection">
-        <a href="#">
+        <a href="https://ascher.in/collections/daily-essentials/" target="_blank">
           <div class="collection-img">
             <img class="width-100" src="./assets/images/collection-img-5.jpg" alt="ccollection">
           </div>
@@ -331,12 +355,16 @@
                       <label for="recipient-name" class="col-form-label">Full Name:</label>
                       <input type="text" class="form-control" id="recipient-name" required>
                     </div>
+                    <div class="mb-3">
+                      <label for="recipient-tel" class="col-form-label">Phone Number:</label>
+                      <input type="tel" class="form-control" id="recipient-tel" pattern="[0-9]+" title="Please enter only 10 digit numbers from 0 to 9" required>
+                    </div>
                       <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Email:</label>
+                          <label for="recipient-email" class="col-form-label">Email:</label>
                           <input type="email" class="form-control" id="recipient-email" required>
                       </div>
                       <div class="mb-3">
-                          <label for="message-text" class="col-form-label">Message:</label>
+                          <label for="message-text" class="col-form-label">Description:</label>
                           <textarea class="form-control" id="message-text"></textarea>
                       </div>
                       <div class="modal-footer">
@@ -345,10 +373,6 @@
                     </div>
                   </form>
               </div>
-              <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-              </div> -->
           </div>
       </div>
   </div>

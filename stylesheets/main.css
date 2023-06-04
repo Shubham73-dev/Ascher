@@ -104,6 +104,20 @@ nav{
     left: 20%;
     top: 5%;
 }
+.social-media-conatiner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.social-media-conatiner a i{
+    color: #5B5B5B;
+ }
+.drop-down-div{
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
 .drop-down-menu{
     display: none;
 }
@@ -462,6 +476,11 @@ nav{
     .mobile-nav{
         display: flex !important;
         background-color: #fff !important;
+    }
+    .social-media-conatiner{
+        width: fit-content;
+        gap: 1rem;
+        padding: 1rem 0;
     }
     #first-carousel{
         margin-top: 7.5rem;
