@@ -456,4 +456,10 @@ nav{
         font-size: 12px;
         text-align: left;
     }
+    #footer {
+        padding: 0;
+    }
+    #footer p{
+        text-align: center;
+    }
 }
