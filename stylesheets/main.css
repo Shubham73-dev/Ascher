@@ -231,26 +231,26 @@ nav{
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
 }
-.collection_box a:hover img{
+.collection-box a:hover img{
     transform: scale(1.1);
 }
-.collection_box a:hover .collection-content{
+.collection-box a:hover .collection-content{
     background-color: transparent;
 }
-.collection_box a:hover p{
+.collection-box a:hover p{
     color: #fff;
     transition-duration: 0.5s;
 }
-.collection_box a:hover h4{
+.collection-box a:hover h4{
     color: #fff;
     transition-duration: 0.5s;
 }
-.collection_box a{
+.collection-box a{
     position: relative;
     display: block;
     overflow: hidden;
 }
-.collection_box a img{
+.collection-box a img{
     transition-duration: 0.5s;
 }
 .collection-content{
@@ -364,7 +364,24 @@ nav{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
     text-align: left !important;
 }
-  
+.form-control:focus {
+    color: #212529 !important;
+    background-color: #fff !important;
+    border-color: #86b7fe !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25) !important;
+}
+.col-form-label{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.modal-header .modal-title{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.custom-btn-link{
+    border: none;
+    background-color: transparent;
+}  
 #recipient-name,#message-text{
     text-transform: capitalize !important;
     font-family: auto;
