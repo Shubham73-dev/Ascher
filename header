@@ -1,0 +1,134 @@
+<header id="header">
+    <nav class="desktop-nav">
+        <div class="custom-row nav-container">
+            <div class="menu home">
+                <div class="social-media-conatiner">
+                    <div class="icon-container"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="icon-container"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="icon-container"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div class="icon-container"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+            <div class="menu flex-1">
+                <div class="custom-row flex-col space-ele" style="justify-content: end;">
+                    <div class=""></div>
+                    <div class="drop-down">
+                        <a href="../../../index.html#collection">COLLECTIONS <br> <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="drop-down-menu pos-abs">
+                            <li style="list-style: none;"><a href="../../collectionsPages/engagement-rings.html"
+                                    target="_blank">ENGAGEMENT RINGS</a></li>
+                            <li><a href="../../collectionsPages/celebration-wear.html"
+                                    target="_blank">CELEBRATION WEAR</a></li>
+                            <li><a href="../../collectionsPages/solitare-pendent-earing.html"
+                                    target="_blank">Solitaire
+                                    Pendants & Earrings</a></li>
+                            <li><a href="../../collectionsPages/solitare-custom.html"
+                                    target="_blank">Solitaires for Customised Jewellery</a></li>
+                            <li><a href="../../collectionsPages/daily-essentials.html" target="_blank">DAILY
+                                    ESSENTIALS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu flex-1">
+                <div class="custom-row flex-col space-ele">
+                    <div class=""><a href="#" style="visibility: hidden;">some text</a></div>
+                    <div class=""><a href="../../../index.html#customized_jwellery">CUSTOMIZED <br> JEWELLERY</a></div>
+                </div>
+            </div>
+            <div class="menu flex-1 logo">
+                <a href="../../../index.html"><img src="https://ascher.in/wp-content/uploads/2021/05/ascher-logo.svg"
+                        alt="Ascher Jewels"></a>
+            </div>
+            <div class="menu flex-1 flex-col custom-row search-container">
+                <div class="custom-row search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="SEARCH">
+                </div>
+                <div class="menu-bottom-align custom-row align-center">
+                    <a href="../../jewel-care.html" target="_blank" style="white-space: nowrap;">JEWEL CARE</a>
+                    <div class="drop-down drop-down-div">
+                        <a href="../../about-us.html" target="_blank">ABOUT US <br> <i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <ul class="drop-down-menu pos-abs">
+                            <li><a href="#" target="_blank">FAQ</a></li>
+                            <li><a href="../../../index.html#accolades">CUSTOMER ACCOLADES</a></li>
+                            <li><a href="../../career.html" target="_blank">CAREER</a></li>
+                            <li><a href="../../whats-new.html" target="_blank">WHAT'S NEW</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu flex-1">
+                <div class="text-end">
+                    <img width="15px" height="auto"
+                        src="https://ascher.in/wp-content/themes/ascher/assets/images/icons/contact-enquiry.svg"
+                        alt="">
+                    <a href="../../contact-us.html" target="_blank"
+                        style="text-align: left;">CONTACT&nbsp;/&nbsp;<br>ENQUIRY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- mobile header -->
+    <nav class="navbar navbar-expand-lg navbar-light mobile-nav fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../index.html"><img src="https://ascher.in/wp-content/uploads/2021/05/ascher-logo.svg"
+                    alt="Ascher Jewels"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form class="d-flex ml-auto">
+                    <input class="form-control form-control-no-border" type="search" placeholder="Search"
+                        aria-label="Search">
+                </form>
+                <div class="navbar-nav">
+                    <div class="social-media-conatiner">
+                        <div class="icon-container"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon-container"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon-container"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div class="icon-container"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                    <a class="nav-link" href="../../../index.html#collection" class="nav-link dropdown-toggle" id="collectionDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">COLLECTIONS &nbsp;<i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="collectionDropdown">
+                        <li><a class="dropdown-item" href="../../collectionsPages/engagement-rings.html"
+                                target="_blank">ENGAGEMENT RINGS</a></li>
+                        <li><a class="dropdown-item" href="../../collectionsPages/celebration-wear.html"
+                                target="_blank">CELEBRATION WEAR</a></li>
+                        <li><a class="dropdown-item"
+                                href="../../collectionsPages/solitare-pendent-earing.html"
+                                target="_blank">Solitaire Pendants & Earrings</a></li>
+                        <li><a class="dropdown-item"
+                                href="../../collectionsPages/solitare-custom.html"
+                                target="_blank">Solitaires for Customised Jewellery</a></li>
+                        <li><a class="dropdown-item" href="../../collectionsPages/daily-essentials.html"
+                                target="_blank">DAILY
+                                ESSENTIALS</a></li>
+                    </ul>
+                    <a class="nav-link" href="../../../index.html/#customized_jwellery">CUSTOMIZED JWELLERY</a>
+                    <a class="nav-link" href="../../jewel-care.html" target="_blank">JEWEL CARE</a>
+                    <a class="nav-link" href="../../about-us.html" target="_blank"
+                        class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">ABOUT US
+                        &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="../../../index.html#accolades">Customer Accolades</a></li>
+                        <li><a class="dropdown-item" href="../../career.html">Career</a></li>
+                        <li><a class="dropdown-item" href="../../whats-new.html" target="_blank">What's
+                                New</a></li>
+                    </ul>
+                    <a class="nav-link" href="../../contact-us.html" target="_blank">CONTACT /
+                        ENQUIRY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
