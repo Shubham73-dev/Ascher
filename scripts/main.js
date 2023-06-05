@@ -107,11 +107,4 @@ $(document).ready(function () {
 
 // script for OWL carousel ends here
 
-$(document).ready(function() {
-  $('.navbar-toggler').click(function() {
-    $('#navbar-menu-icon, #navbar-close-icon').toggleClass('d-none');
-  });
-});
-
-
 

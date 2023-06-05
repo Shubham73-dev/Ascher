@@ -230,26 +230,26 @@ nav{
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
 }
-.collection-box a:hover img{
+.collection_box a:hover img{
     transform: scale(1.1);
 }
-.collection-box a:hover .collection-content{
+.collection_box a:hover .collection-content{
     background-color: transparent;
 }
-.collection-box a:hover p{
+.collection_box a:hover p{
     color: #fff;
     transition-duration: 0.5s;
 }
-.collection-box a:hover h4{
+.collection_box a:hover h4{
     color: #fff;
     transition-duration: 0.5s;
 }
-.collection-box a{
+.collection_box a{
     position: relative;
     display: block;
     overflow: hidden;
 }
-.collection-box a img{
+.collection_box a img{
     transition-duration: 0.5s;
 }
 .collection-content{
@@ -389,13 +389,6 @@ nav{
     .mobile-nav{
         display: flex !important;
         background-color: #fff !important;
-    }
-    .navbar-toggler-icon{
-        background: transparent !important;
-    }
-    .navbar-toggler{
-        background-color: rgba(0,0,0,0.2) !important;
-        color: white !important;
     }
     .social-media-conatiner{
         width: fit-content;
