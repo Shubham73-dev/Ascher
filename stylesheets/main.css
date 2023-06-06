@@ -134,6 +134,9 @@ nav{
     margin-right: 10px;
     font-size: 22px;
   }
+.drop-down-menu li a {
+    text-transform: uppercase !important;
+  }
 .drop-down:hover .drop-down-menu{
     display: flex;
     left: 0;
