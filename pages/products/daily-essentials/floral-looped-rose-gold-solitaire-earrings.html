@@ -430,45 +430,43 @@ font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Ari
                                         <li>Can be customised to get in any gold colour</li>
                                     </ul>
                                 </div>
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="btn btn-primary quote-btn">Request quote</button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="quote-btn">Request quote</button>
 
 <!-- Open modal structure starts from here -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-custom-class="custom-modal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Full Name:</label>
-                <input type="text" class="form-control" id="recipient-name" required>
-              </div>
-              <div class="mb-3">
-                <label for="recipient-tel" class="col-form-label">Phone Number:</label>
-                <input type="tel" class="form-control" id="recipient-tel" pattern="[0-9]+"
-                  title="Please enter only 10 digit numbers from 0 to 9" required>
-              </div>
-              <div class="mb-3">
-                <label for="recipient-email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="recipient-email" required>
-              </div>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label">Description:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-primary" value="Submit">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+data-bs-custom-class="custom-modal">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
-    <!-- modal structure ends here -->
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="recipient-name" placeholder="FULL NAME" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="recipient-email" placeholder="E-MAIL" required>
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" id="recipient-tel" pattern="[0-9]+"
+            title="Please enter only 10 digit numbers from 0 to 9" placeholder="MOBILE" required>
+        </div>
+        <div class="mb-3">
+          <label for="message-text" class="col-form-label">Description:</label>
+          <textarea class="form-control" id="message-text"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="quote-btn" data-bs-dismiss="modal">Close</button>
+          <input type="submit" class="quote-btn" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- modal structure ends here -->
               
                             </div>
                         </div>

@@ -335,6 +335,12 @@ nav{
 }
 .quote-btn{
     width: max-content !important;
+    padding: 9px 20px;
+    background-color: #632C66;
+    color: #fff;
+    border: none;
+    font-family: auto;
+    letter-spacing: 1px;
 }
 
 /* footer css */
@@ -386,9 +392,17 @@ nav{
     text-transform: capitalize !important;
     font-family: auto;
 }
+#recipient-name::placeholder,#recipient-tel::placeholder{
+    font-weight: 400;
+    text-transform: uppercase;
+}
 #recipient-email{
     text-transform: lowercase !important;
     font-family: auto;
+}
+#recipient-email::placeholder{
+    font-weight: 400;
+    text-transform: uppercase !important;
 }
 /* css for RWD */
 @media(max-width:992px){             /*tablet-view*/
