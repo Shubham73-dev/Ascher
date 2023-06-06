@@ -719,7 +719,19 @@
     rs-layer{
       font-family: 'Cinzel Decorative', cursive;
     }
+    #interactive-link{
+      font-family: 'myriad_prolight';
+
+  }
+  .customize-btn{
+    font-family: 'myriad_prolight';
+    background-color: transparent;
+    border: none;
+    color: #0062ff;
+    text-decoration: underline !important;
+  }
   </style>
+  
 </head>
 
 <body>
@@ -1239,7 +1251,7 @@ var dgwt_wcas = {"labels":{"category":"Category","tag":"Tag","brand":"Brand","po
 			</rs-module-wrap>
 			<!-- END REVOLUTION SLIDER -->
   <!-- section second ends here -->
-
+  
   <!-- section third starts here -->
   <section id="collection">
     <h2>COLLECTIONS</h2>
@@ -1310,99 +1322,85 @@ var dgwt_wcas = {"labels":{"category":"Category","tag":"Tag","brand":"Brand","po
   <!-- section third ends here -->
 
   <!-- section fourth starts here -->
-  <section id="customized_jwellery">
-    <div class="customized_jwellery-conatiner">
-      <h2 class="align-text-center" style="padding-bottom: 30px;">CUSTOMISED <br> JEWELLERY</h2>
-      <p>Our staged approach of making a customised jewel helps in visualising the design and product in interim stages
-        so that the final jewellery item aligns with your expectations.</p>
-      <p>For your customised jewel, we will select right gemstones that suit your preferences. For diamond jewellery,
-        this <a style="color: #0062ff;text-decoration: underline;" href="https://4cs.gia.edu/interactive-4cs/index.html"
-          target="_blank">interactive tool</a> helps you in visualising a diamond's appearance with different quality
-        characteristics. <br> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          data-bs-whatever="@mdo" class="custom-btn-link"><span style="color: #0062ff;text-decoration: underline;font-size: 16px;">To customize your own jewel You can click here</span></button>
-      </p>
-      <h2 class="align-text-center" style="margin-bottom: 1rem;">CUSTOMISATION<br>STAGES</h2>
-      <div class="divider custom-row flex-col align-center">
-        <div class="divider-hort"></div>
-        <div class="divider-vert"></div>
-      </div>
-      <div class="custom-row custom-card">
-        <div class="img-view flex-1" style="border: 1px solid #000;">
-          <img class="width-100 height-100" src="./assets/images/STAGE-1.jpg" alt="stage-img">
-        </div>
-        <div class="stage-content flex-1 flex-col custom-row justify-center">
-          <div class="custom-row flex-col stage-content-elements">
-            <h2>Stage-1</h2>
-            <div class="custom-row flex-col">
-              <span>Select a design</span>
-              <span>or create a new one with us</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="custom-row custom-card reverse-row">
-        <div class="img-view flex-1" style="border: 1px solid #000;">
-          <img class="width-100 height-100" src="./assets/images/STAGE-2.jpg" alt="stage-img">
-        </div>
-        <div class="stage-content flex-1 flex-col custom-row justify-center align-text-end">
-          <div class="custom-row flex-col stage-content-elements align-element-end">
-            <h2>Stage-2</h2>
-            <div class="custom-row flex-col">
-              <span>Review a 2D sketch and a 3D CAD design</span>
-              <span>to visualise the end product</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="custom-row custom-card">
-        <div class="img-view flex-1" style="border: 1px solid #000;">
-          <img class="width-100 height-100" src="./assets/images/STAGE-3.jpg" alt="stage-img">
-        </div>
-        <div class="stage-content flex-1 flex-col custom-row justify-center">
-          <div class="custom-row flex-col stage-content-elements">
-            <h2>Stage-3</h2>
-            <div class="custom-row flex-col">
-              <span>Review a wax prototype to see</span>
-              <span>how your jewellery piece will look</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="custom-row custom-card reverse-row">
-        <div class="img-view flex-1" style="border: 1px solid #000;">
-          <img class="width-100 height-100" src="./assets/images/STAGE-4.jpg" alt="stage-img">
-        </div>
-        <div class="stage-content flex-1 flex-col custom-row justify-center align-text-end">
-          <div class="custom-row flex-col stage-content-elements align-element-end">
-            <h2>Stage-4</h2>
-            <div class="custom-row flex-col">
-              <span>Check the raw unpolished</span>
-              <span>Gold/Platinum mount</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="custom-row custom-card">
-        <div class="img-view flex-1" style="border: 1px solid #000;">
-          <img class="width-100 height-100" src="./assets/images/STAGE-5.jpg" alt="stage-img">
-        </div>
-        <div class="stage-content flex-1 flex-col custom-row justify-center">
-          <div class="custom-row flex-col stage-content-elements">
-            <h2>Stage-5</h2>
-            <div class="custom-row flex-col">
-              <span>Set gemstones and</span>
-              <span>have the final jewel ready</span>
-            </div>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
-              class="btn btn-primary quote-btn">Customize</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Open modal structure starts from here -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-      data-bs-custom-class="custom-modal">
-      <div class="modal-dialog">
+  <section id="customised">
+    <div class="customised-block">
+        <div class="container">
+            <div class="main_content_box">
+                <div class="section-title">
+                    <h1 class="text-center">CUSTOMISED <br> JEWELLERY</h1>
+                </div>
+                 <p>Our staged approach of making a customised jewel helps in visualising the design and product in interim stages so that the final jewellery item aligns with your expectations.</p>
+<p>For your customised jewel, we will select right gemstones that suit your preferences. For diamond jewellery, this <a  id="interactive-link" href="https://4cs.gia.edu/interactive-4cs/index.html" target="_blank">interactive tool</a> helps you in visualising a diamond's appearance with different quality characteristics.
+  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="customize-btn">To customize your own jewel You can click here</button>
+</p>            
+
+</div>
+            <div class="customised-box">
+                <h3>CUSTOMISATION <br> STAGES</h3>
+                                <div class="row m-0 p-0">
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_img">
+                           <img src="https://ascher.in/wp-content/uploads/2021/06/STAGE-1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_content">                        
+                            <h4>STAGE - 1</h4>
+                            <p>Select a design <br> or create a new one with us</p>                        </div>
+                    </div>
+                </div>
+                                <div class="row m-0 p-0">
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_img">
+                           <img src="https://ascher.in/wp-content/uploads/2021/06/STAGE-2.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_content">                        
+                            <h4>STAGE - 2</h4>
+                            <p>Review a 2D sketch and a 3D CAD design <br> to visualise the end product</p>                        </div>
+                    </div>
+                </div>
+                                <div class="row m-0 p-0">
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_img">
+                           <img src="https://ascher.in/wp-content/uploads/2021/07/003.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_content">                        
+                            <h4>STAGE - 3</h4>
+                            <p>Review a wax prototype to see <br> how your jewellery piece will look</p>                        </div>
+                    </div>
+                </div>
+                                <div class="row m-0 p-0">
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_img">
+                           <img src="https://ascher.in/wp-content/uploads/2021/07/004.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_content">                        
+                            <h4>STAGE - 4</h4>
+                            <p>Check the raw unpolished<br> Gold/Platinum mount</p>                        </div>
+                    </div>
+                </div>
+                                <div class="row m-0 p-0">
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="customised_img">
+                           <img src="https://ascher.in/wp-content/uploads/2021/07/005.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                      <div class="customised_content">
+                        <h4>STAGE - 5</h4>
+                        <p>Set gemstones and <br> have the final jewel ready</p>
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="btn btn-primary quote-btn">Customize</button>
+                      </div>
+                    </div>
+                    <!-- Open modal structure starts from here -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-custom-class="custom-modal">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
@@ -1437,7 +1435,13 @@ var dgwt_wcas = {"labels":{"category":"Category","tag":"Tag","brand":"Brand","po
       </div>
     </div>
     <!-- modal structure ends here -->
-  </section>
+                </div>
+                                          
+            
+            </div>
+        </div>
+    </div>
+</section>
   <!-- section fourth ends here -->
 
   <!-- section fifth starts here -->
