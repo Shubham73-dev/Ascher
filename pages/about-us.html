@@ -242,6 +242,11 @@ a.button.product_type_simple {
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../stylesheets/main.css">
 <script src="../scripts/main.js"></script>
+<style>
+  .btn {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+</style>
     </head>
     <body class="page-template page-template-template-parts page-template-aboutus page-template-template-partsaboutus-php page page-id-48 wp-custom-logo theme-ascher woocommerce-no-js elementor-default elementor-kit-504">
 
@@ -404,6 +409,48 @@ a.button.product_type_simple {
                     </div>
                 </div>
             </div>
+            <div class="subscribe-btn-container align-text-center" style="margin-top: 2rem;">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                class="btn btn-primary quote-btn">Subscribe</button>
+            </div>
+<!-- Open modal structure starts from here -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-custom-class="custom-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Full Name:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-tel" class="col-form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="recipient-tel" pattern="[0-9]+"
+                  title="Please enter only 10 digit numbers from 0 to 9" required>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipient-email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Description:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-primary" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal structure ends here -->
+              
         </div>
     </div>
 </section>
