@@ -125,7 +125,15 @@ nav{
     font-weight: 100;
     cursor: pointer;
     color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.drop-down-menu li:not(:first-child)::before {
+    content: "•";
+    margin-right: 10px;
+    font-size: 22px;
+  }
 .drop-down:hover .drop-down-menu{
     display: flex;
     left: 0;
@@ -134,7 +142,7 @@ nav{
     gap: 3rem;
     width: 100%;
     background-color: white;
-    padding: 14px;
+    padding: 6px;
     box-shadow: 10px 8px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .space-ele{
