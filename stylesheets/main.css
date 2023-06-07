@@ -151,7 +151,7 @@ nav{
     left: 0;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
     background-color: white;
     padding: 6px;
@@ -394,6 +394,8 @@ nav{
 #footer p{
     font-size: 10px;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 }
 /* bootstrap customize css */
 .form-control{
@@ -530,18 +532,33 @@ nav{
 
 /* css for collection-pages starts from here */
 .menu a{
-    opacity: 0.7;
     font-size: 10pt;
 }
 .drop-down a{
-    opacity: 0.7;
     font-size: 10pt;
-
 }
 
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1050px !important;
+}
+.prod_boxs p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+.sing_pro_content h4{
+    font-weight: 100 !important;
+}
+.sing_pro_content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+.sing_pro_content ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 9pt !important;
 }
 }
 /* css for collection-pages ends here */
