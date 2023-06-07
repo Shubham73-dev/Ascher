@@ -441,6 +441,8 @@ a.button.product_type_simple {
                                              
                     </div>
                 </div>
+                <!-- Added pagination div here -->
+                <div id="pagination" class="center-align" style="gap:1rem"></div>
             </div>
         </div>
     </div>
@@ -466,6 +468,55 @@ a.button.product_type_simple {
           header.removeClass("sticky");
         }
     }
+</script>
+
+<!--script for pagination starts here  -->
+<script>
+    $(document).ready(function () {
+        var productsPerPage = 15; // Number of products to display per page
+        var $products = $(".prod_boxs"); // Get all product divs
+        var productCount = $products.length; // Get the total number of products
+
+        // Calculate the number of pages required
+        var pageCount = Math.ceil(productCount / productsPerPage);
+
+        // Create pagination links
+        var paginationHTML = '';
+        for (var i = 1; i <= pageCount; i++) {
+            paginationHTML += '<a href="#" class="page-link">' + i + '</a>';
+        }
+
+        // Add pagination links to the pagination div
+        $("#pagination").html(paginationHTML);
+
+        // Show the first page initially
+        showPage(1);
+
+        // Function to show a specific page
+        function showPage(page) {
+            // Calculate the start and end indexes of the products to display
+            var startIndex = (page - 1) * productsPerPage;
+            var endIndex = startIndex + productsPerPage;
+
+            // Hide all product divs
+            $products.hide();
+
+            // Show the products for the current page
+            $products.slice(startIndex, endIndex).show();
+        }
+
+        // Handle pagination link click
+        $(document).on("click", ".page-link", function (e) {
+            e.preventDefault();
+
+            // Get the page number from the link text
+            var page = parseInt($(this).text());
+
+            // Show the corresponding page
+            showPage(page);
+        });
+    });
+
 </script>
 
 
