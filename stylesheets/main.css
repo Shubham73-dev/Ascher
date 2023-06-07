@@ -377,6 +377,9 @@ nav{
     font-size: 9pt !important;
 
 }
+#accolades .accolades-block{
+    padding: 60px 0 !important;
+}
 /* css for accolades ends from here */
 /* footer css */
 #footer{
