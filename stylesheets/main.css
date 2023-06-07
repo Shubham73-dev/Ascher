@@ -15,6 +15,11 @@ a:hover{
 h1, h3{
     font-weight: 100 !important;
 }
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
 .custom-row{
     display: flex;
 }
@@ -543,28 +548,14 @@ nav{
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1050px !important;
 }
-.prod_boxs p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-}
 .sing_pro_content h4{
     font-weight: 100 !important;
-}
-.sing_pro_content p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
 }
 .sing_pro_content ul li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 9pt !important;
 }
-.relpross p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-}
+
 }
 /* css for collection-pages ends here */
