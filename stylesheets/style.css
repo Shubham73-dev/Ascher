@@ -15,8 +15,11 @@ a:hover{
 h1, h3{
     font-weight: 100 !important;
 }
-
-/* custom css starts from here */
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
 .custom-row{
     display: flex;
 }
@@ -64,6 +67,7 @@ h1, h3{
 .reverse-row{
     flex-direction: row-reverse;
 }
+
 /* css for header starts here */
 nav{
     border-bottom: 1px solid #000;
@@ -134,7 +138,13 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.drop-down-menu li:not(:first-child)::before {
+.drop-down-menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+.drop-down-menu li:not(:first-child) a::before {
     content: "•";
     margin-right: 10px;
     font-size: 22px;
@@ -147,7 +157,7 @@ nav{
     left: 0;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
     background-color: white;
     padding: 6px;
@@ -189,170 +199,7 @@ nav{
 }
 /* css for header ends here */
 
-/* css for first-carousel starts here */
-.banners{
-    min-height: 85vh;
-    background-image: url(../assets/images/slider-1.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    transition-duration: 0.5s;
-}
-.circle{
-    border-radius: 50%;
-}
-.slide-content-container{
-    top: 16%;
-    right: 15%;
-    column-gap: 10px;
-}
-.slide-content p{
-    font-size: 2.5em;
-    font-weight: 400;
-    color: #632c66;
-    margin: 0;
-    line-height: 36px !important;
-}
-.left-align{
-    padding-right: 12rem;
-}
-.togglers-container{
-    justify-content: end;
-    column-gap: 10px;
-    margin-top: 1rem;
-}
-.togglers{
-    height: 10px;
-    width: 10px;
-    background-color: #632c66;
-    cursor: pointer;
-}
-.active-toggler{
-    background-color: #fff;
-}
-/* css for third (collection section starts from here) */
-#collection{
-    padding: 5rem 1rem;
-}
-#collection h2{
-    font-size: 15pt;
-    color: #434242;
-    font-weight: 100;
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-.collection-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-}
-.collection-box a:hover img{
-    transform: scale(1.1);
-}
-.collection-box a:hover .collection-content{
-    background-color: transparent;
-}
-.collection-box a:hover p{
-    color: #fff;
-    transition-duration: 0.5s;
-}
-.collection-box a:hover h4{
-    color: #fff;
-    transition-duration: 0.5s;
-}
-.collection-box a{
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-.collection-box a img{
-    transition-duration: 0.5s;
-}
-.collection-content{
-    position: absolute;
-    bottom: 0;
-    background-color: #F5F5F9;
-    width: 100%;
-    padding: 15px 0;
-    transition-duration: 0.5s;
-}
-.collection-content p{
-    color: #5B5B5B;
-    font-size: 16px;
-    padding: 0 10px;
-    margin: 0 !important;
-    padding: 0 10px;
-}
-.collection-content h4{
-    font-size: 16pt;
-    color: #5B5B5B;
-    font-weight: 400;
-    padding: 0 10px;
-    margin: 0 !important;
-    padding: 0 10px;
-}
-.upper-section{
-    column-gap: 1.5rem;
-}
-.second-collection-container{
-    justify-content: space-between;
-    height: 100%;
-    gap: 1rem;
-}
-
-/* section fourth css starts here */
-#customized_jwellery{
-    padding: 14px 0;
-}
-#customized_jwellery h2{
-    font-size: 15pt;
-    line-height: 20px;
-    font-weight: 100;
-}
-#customised p{
-    /* text-align: justify; */
-    font-size: 11pt !important;
-    line-height: 22px;
-    color: #434242;
-    /* font-weight: 100; */
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
-     font-weight: 300;
-}
-
-.divider-hort{
-    height: 1px;
-    width: 8rem;
-    background-color: #000;
-}
-.divider-vert{
-    width: 1px;
-    height: 5rem;
-    background-color: #000;
-}
-.customized_jwellery-conatiner{
-    max-width: 75%;
-    margin: 0 auto;
-}
-.custom-card{
-    max-height: 65vh;
-    gap: 1px;
-}
-.stage-content-elements{
-    gap: 1rem;
-    width: 85%;
-    margin: 0 auto;
-}
-.stage-content-elements h2{
-    font-size: 22pt !important;
-}
-.stage-content-elements span{
-    font-size: 11pt;
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 300;
-    letter-spacing: 1px;
-}
+/* quote button css */
 .quote-btn{
     width: max-content !important;
     padding: 9px 20px;
@@ -361,6 +208,7 @@ nav{
     border: none;
     font-family: 'Cinzel Decorative', cursive;
     letter-spacing: 1px;
+    margin-top: 1rem;
 }
 
 /* footer css */
@@ -370,7 +218,10 @@ nav{
 #footer p{
     font-size: 10px;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 }
+
 /* bootstrap customize css */
 .form-control{
     display: block  !important;
@@ -457,41 +308,14 @@ nav{
     .left-align{
         padding-right: 6rem;
     }
+    #footer{
+        padding: 1rem 0;
+    }
 }
 @media(max-width:768px){            /*mobile-view*/
-    .banners{
-        max-height: 50vh !important;
-        min-height: 50vh !important;
-    }
-    .slide-content-container{
-        position: static;
-        background-color: #EEEEEE;
-        padding: 1rem;
-        gap: 10px !important;
-    }
-    .slide-content p{
-        text-align: center !important;
-        padding: 0;
-    }
-    .togglers-container{
-        justify-content: center;
-        margin-top: 0 !important;
-    }
-    .stage-content{
-        padding: 25px 0;
-    }
-    .customized_jwellery-conatiner{
-        max-width: 95%;
-    }
-    .stage-content-elements{
-        gap: 10px;
-    }
-    .stage-content-elements span,.stage-content-elements button{
-        font-size: 12px;
-        text-align: left;
-    }
+    
     .quote-btn{
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
     #footer {
         padding: 0;
@@ -500,4 +324,27 @@ nav{
         text-align: center;
     }
 }
-/* custom css ends here */
+
+/* css for collection-pages starts from here */
+.menu a{
+    font-size: 10pt;
+}
+.drop-down a{
+    font-size: 10pt;
+}
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1050px !important;
+}
+.sing_pro_content h4{
+    font-weight: 100 !important;
+}
+.sing_pro_content ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 9pt !important;
+}
+
+}
+/* css for collection-pages ends here */
