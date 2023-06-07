@@ -365,6 +365,7 @@ nav{
     border: none;
     font-family: 'Cinzel Decorative', cursive;
     letter-spacing: 1px;
+    margin-top: 1rem;
 }
 /* css for accolades starts from here */
 .accolades_box p{
@@ -520,7 +521,7 @@ nav{
         text-align: left;
     }
     .quote-btn{
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
     #footer {
         padding: 0;
@@ -559,6 +560,11 @@ nav{
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 9pt !important;
+}
+.relpross p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
 }
 }
 /* css for collection-pages ends here */
