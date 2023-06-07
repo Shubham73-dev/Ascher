@@ -12,6 +12,9 @@ a{
 a:hover{
     text-decoration: none !important;
 }
+h1, h3{
+    font-weight: 100 !important;
+}
 .custom-row{
     display: flex;
 }
@@ -306,15 +309,16 @@ nav{
     font-weight: 100;
 }
 #customised p{
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 11pt !important;
     line-height: 22px;
     color: #434242;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    /* font-weight: 100; */
+    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Open Sans', sans-serif;
      font-weight: 300;
 }
+
 .divider-hort{
     height: 1px;
     width: 8rem;
@@ -353,7 +357,7 @@ nav{
     background-color: #632C66;
     color: #fff;
     border: none;
-    font-family: auto;
+    font-family: 'Cinzel Decorative', cursive;
     letter-spacing: 1px;
 }
 
@@ -483,6 +487,9 @@ nav{
     .stage-content-elements span,.stage-content-elements button{
         font-size: 12px;
         text-align: left;
+    }
+    .quote-btn{
+        margin-top: 10px;
     }
     #footer {
         padding: 0;
