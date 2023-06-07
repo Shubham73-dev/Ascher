@@ -305,13 +305,15 @@ nav{
     line-height: 20px;
     font-weight: 100;
 }
-#customized_jwellery p{
+#customised p{
     text-align: justify;
-    font-size: 13pt;
+    font-size: 11pt !important;
     line-height: 22px;
     color: #434242;
     font-weight: 100;
-    font-family: 'myriad_prolight';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
 }
 .divider-hort{
     height: 1px;
@@ -341,7 +343,8 @@ nav{
 }
 .stage-content-elements span{
     font-size: 11pt;
-    font-family: 'myriad_prolight';
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
     letter-spacing: 1px;
 }
 .quote-btn{
