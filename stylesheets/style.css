@@ -15,6 +15,8 @@ a:hover{
 h1, h3{
     font-weight: 100 !important;
 }
+
+/* custom css starts from here */
 .custom-row{
     display: flex;
 }
@@ -316,7 +318,7 @@ nav{
     /* font-weight: 100; */
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+     font-weight: 300;
 }
 
 .divider-hort{
@@ -360,24 +362,7 @@ nav{
     font-family: 'Cinzel Decorative', cursive;
     letter-spacing: 1px;
 }
-/* css for accolades starts from here */
-.accolades_box p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-align: left !important;
-    font-size: 9pt !important;
-}
-.accolades_box p ul{
-    padding: 0;
-    font-size: 9pt !important;
 
-}
-.accolades_box ul{
-    padding: 0 !important;
-    font-size: 9pt !important;
-
-}
-/* css for accolades ends from here */
 /* footer css */
 #footer{
     padding: 2rem 5rem;
@@ -472,9 +457,6 @@ nav{
     .left-align{
         padding-right: 6rem;
     }
-    #footer{
-        padding: 1rem 0;
-    }
 }
 @media(max-width:768px){            /*mobile-view*/
     .banners{
@@ -518,11 +500,4 @@ nav{
         text-align: center;
     }
 }
-
-/* css for collection-pages starts from here */
-@media (min-width: 1200px){
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1050px !important;
-}
-}
-/* css for collection-pages ends here */
+/* custom css ends here */
